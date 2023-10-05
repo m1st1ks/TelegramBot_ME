@@ -42,7 +42,7 @@ async def trigger(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def change_data(id, user_id, admin_name, date):
@@ -104,7 +104,7 @@ async def download(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 def reg_admin_trigger(dp: Dispatcher):
