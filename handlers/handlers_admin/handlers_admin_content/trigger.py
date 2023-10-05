@@ -62,7 +62,7 @@ async def change_data(id, user_id, admin_name, date):
     except Error as e:
         print(e)
         await bot.send_message(user_id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                        'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                        'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def download(cb: types.CallbackQuery):
