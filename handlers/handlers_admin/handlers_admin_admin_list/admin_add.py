@@ -36,7 +36,7 @@ async def add_to_db(admin_id, admin_username, role, msg: types.Message):
     except Error as e:
         print(e)
         await bot.send_message(msg.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                 'Cвяжитесь с администратором @artem_lyashenka')
+                                                 'Cвяжитесь с администратором бота!')
 
 
 async def add(cb: types.CallbackQuery):
@@ -53,7 +53,7 @@ async def join_id(msg: types.Message):
     with open(f'cache/{msg.from_user.id}_add.txt', 'a', encoding='utf-8') as f:
         f.write(f'{text}\n')
     await bot.send_message(msg.from_user.id, 'Введите username админа.\n'
-                                             'Пример: @artem_lyashenka')
+                                             'Пример: @nickname')
 
 
 async def join_username(msg: types.Message):
