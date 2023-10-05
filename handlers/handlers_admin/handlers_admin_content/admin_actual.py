@@ -74,7 +74,7 @@ async def actual(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def next_page(cb: types.CallbackQuery):
@@ -104,7 +104,7 @@ async def next_page(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def back_page(cb: types.CallbackQuery):
@@ -134,7 +134,7 @@ async def back_page(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 def reg_admin_actual(dp: Dispatcher):
