@@ -36,7 +36,7 @@ async def download_for_users(user_id, user_name, types, url, status, upload_date
     except Error as e:
         print(e)
         await bot.send_message(msg.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                 'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                 'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def download_file(msg: types.Message, message):
@@ -50,7 +50,7 @@ async def download_file(msg: types.Message, message):
         await bot.edit_message_text(chat_id=msg.chat.id, message_id=message.message_id, text='Файл успешно скачен! ✅')
     except:
         await bot.send_message(msg.from_user.id, 'Упс! Произошел сбой на нашей стороне... 🙊 \n'
-                                                 'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                 'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def download_photo(msg: types.Message, message):
@@ -64,7 +64,7 @@ async def download_photo(msg: types.Message, message):
         await bot.edit_message_text(chat_id=msg.chat.id, message_id=message.message_id, text='Фото успешно скачено! ✅')
     except:
         await bot.send_message(msg.from_user.id, 'Упс! Произошел сбой при скачивании... 🙊 \n'
-                                                 'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                 'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def download_video(msg: types.Message, message):
@@ -78,7 +78,7 @@ async def download_video(msg: types.Message, message):
         await bot.edit_message_text(chat_id=msg.chat.id, message_id=message.message_id, text='Видео успешно скачено! ✅')
     except:
         await bot.send_message(msg.from_user.id, 'Упс! Произошел сбой при скачивании... 🙊 \n'
-                                                 'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                 'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def url(msg: types.Message):
@@ -88,7 +88,7 @@ async def url(msg: types.Message):
         await bot.send_message(msg.from_user.id, 'Cсылка успешно сохранена! ✅')
     except:
         await bot.send_message(msg.from_user.id, 'Упс! Произошел сбой при сохранении... 🙊 \n'
-                                                 'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                 'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def downloads(msg: types.Message):
