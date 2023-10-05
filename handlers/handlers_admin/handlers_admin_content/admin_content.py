@@ -62,7 +62,7 @@ async def history(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 async def test_clear(cb: types.CallbackQuery):
@@ -98,7 +98,7 @@ async def clear(cb: types.CallbackQuery):
     except Error as e:
         print(e)
         await bot.send_message(cb.from_user.id, 'Упс! Произошел при подключении к серверу... 🙊 \n'
-                                                'Повторите попытку или свяжитесь с администратором @artem_lyashenka')
+                                                'Повторите попытку или свяжитесь с администратором бота!')
 
 
 def reg_admin_content(dp: Dispatcher):
